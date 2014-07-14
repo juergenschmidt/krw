@@ -1,0 +1,241 @@
+/*******
+
+  Typographie PROJEKT KRW
+  Bestandteil der Modularisierung
+  Stand: 14.07.2014
+  -dt
+
+*********/
+/*
+@font-face { font-family: 'Roboto Slab';	src: url('../fonts/SourceSansPro-Black.ttf') 		format('truetype'); font-weight: 900; }
+*/
+
+/***************************************
+*
+*    Standard Bereichsnamen
+*
+****************************************/
+
+/*
+* 	Template 
+* 	Bitte nur Texteigenschaften
+* 	color, bg-color etc. ins Theming
+*
+* {
+	font-family: ;
+	font-size: px; 
+	font-size: 1rem;
+	font-weight: 400;
+	font-style: normal;
+
+	text-transform: none;
+	text-decoration: none;
+
+	word-spacing: 0.2rem;
+	letter-spacing: 0.2rem;
+	line-height: 1.5rem;
+}
+*/
+
+html { 
+	font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 16px;
+	text-align: left;
+	line-height: 1.0rem;
+}
+p { 
+    font-style: normal;
+    font-weight: normal;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1.0rem;
+}
+/* Im Prototyp: class 'current'*/
+h1,
+.h1 {	
+	font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+	font-size: 45px;
+	font-size: 2.5rem;
+	line-height: 5.0rem;
+	font-weight: 700;
+}
+/* Umbruch 4 -> 2-spaltig */
+@media screen and (max-width: 900px) {
+	h1,
+	.h1 {	
+		font-size: 16px;
+		font-size: 1rem;
+		line-height: 2.0rem;
+		font-weight: normal;
+		text-decoration: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	h1,
+	.h1 {	
+	}
+}
+
+/* Im Prototyp: h4 !!! */
+h2,
+.h2 {
+	font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 1.0625rem;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+}
+@media screen and (max-width: 900px) {
+	h2,
+	.h2 {
+
+	}
+}
+@media screen and (max-width: 600px) {
+	h2,
+	.h2 {
+
+	}
+}
+/* z.B Kunden rechte Spalte */
+h3,
+.h3 {
+	font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4375rem;
+	letter-spacing: 0.05rem;
+
+}
+@media screen and (max-width: 900px) {
+	h3,
+	.h3 {
+	}
+}
+@media screen and (max-width: 600px) {
+h3,
+	.h3 {
+	}
+}
+
+/* TabReiterÜberschriften */
+h4,
+.h4 {
+	font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: normal;
+	line-height: 1.4375rem;
+}
+@media screen and (max-width: 900px) {
+	h4,
+	.h4 {
+
+	}
+}
+@media screen and (max-width: 600px) {
+	h4,
+	.h4 {
+ 
+	}
+}
+h5,
+.h5 {
+
+}
+.category {
+
+}
+a,
+.link {
+	font-weight: 400;
+	font-size: 16px;
+	font-size: 0.888888889rem;
+	text-decoration: none;
+}
+.caption {
+
+}
+/* Die Newstexte */
+.introduction {
+    font-style: normal;
+    font-weight: normal;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 1.4375rem;
+}
+blockquote,
+cite,
+.citation {
+
+}
+input {
+
+}
+
+li {
+    font-weight: normal;
+	font-size: 16px;
+	font-size: 0.888888889rem;
+}
+/* Navigation */
+li.nav-level-1 {
+
+}
+li.nav-level-2 {
+	
+}
+li.nav-level-3 {
+	
+}
+
+
+/*
+* Theming, oder was mal eines werden soll....
+*/
+/* Farben */
+.middle-green { color: #899266; }
+.light-green { color: #acb294; }
+.dark-green { color: #29422c; }
+.light-gray { color: #e7e9e0; }
+.red { color: #b01622; }
+.white { color: #fff; }
+.bg-white { background-color: #fff; }
+.bg-red { background-color: #b01622; }
+.bg-light-green { background-color: #acb294; }
+.bg-middle-green { background-color: #899266; }
+.bg-dark-green { background-color: #29412c; }
+.bg-light-gray { background-color: #e7e9e0; }
+.bg-black { background-color: #000; }
+.bg-debug { background-color: #eee; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 { color: #b01622; }
+
+h1, .h1 {
+	margin-bottom: 20px;
+}
+
+h4, .h4 { color: #29422c; }
+input {
+	background-color: #acb294;
+    color: #d6d9ca;
+}
+a,
+link {
+	color: #b01622;
+}
+.category {
+	margin-bottom: -0.2rem;
+}
