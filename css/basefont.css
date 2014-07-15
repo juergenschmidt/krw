@@ -1,0 +1,415 @@
+/* GLOBAL TYPOGRAPHY
+================= */
+
+/*
+Basis Textelemente
+
+Die Übersicht zeigt Textelemente und CSS-Klassen, die in beinahe jedem Projekt eingesetzt werden
+
+Styleguide 1.0
+*/
+/*
+textarea,
+fieldset,
+optgroup,
+option,
+select,
+button,
+input,
+label,
+form,
+table,
+tbody,
+thead,
+tfoot,
+th,
+tr,
+td,
+legend,
+object,
+caption,
+strong,
+cite,
+div,
+sub,
+sup,
+dfn,
+dt,
+dl,
+dt,
+ul,
+ol,
+li,
+p,
+a {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+    color: #535353;
+}
+*/
+
+/*
+<h1>
+
+Titelüberschrift
+
+Markup:
+<h1>Lorem ipsum dolor</h1>
+
+Styleguide 1.0.1
+*/
+h1 {
+    margin: 0.7em 0 0.4em 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51px;
+    font-size: 5.130rem;
+    line-height: 1.1;
+    text-transform:uppercase;
+
+    color:#535353;
+}
+
+/*
+<h2>
+
+Kapitelüberschrift
+
+Markup:
+<h2>Lorem ipsum dolor</h2>
+
+Styleguide 1.0.2
+*/
+h2 {
+    /*
+    margin: 0.2em 0 1em 0;
+    */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 41px;
+    font-size: 4.1rem;
+    line-height: 1.2;
+
+    color:#5706a0;
+}
+
+/*
+<h3>
+
+Unterüberschrift
+
+Markup:
+<h3>Lorem ipsum dolor</h3>
+
+Styleguide 1.0.3
+*/
+h3 {
+    margin: 0.5em 0 0.3em 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    font-size: 2.9rem;
+    line-height: 1.2;
+
+    color:#5706a0;
+}
+
+/*
+<h4>
+
+Zwischenüberschrift
+
+Markup:
+<h4>Lorem ipsum dolor</h4>
+
+Styleguide 1.0.4
+*/
+h4 {
+    margin: 0.1em 0 0.1em 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+
+    color:#5706a0;
+}
+
+/*
+<h5>
+
+Unter-Unterüberschrift
+
+Markup:
+<h5>Lorem ipsum dolor</h5>
+
+Styleguide 1.0.5
+*/
+h5 {
+    margin: 0.5em 0 0.3em 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/*
+<h6>
+
+Unter-Unter-Unterüberschrift
+
+Markup:
+<h6>Lorem ipsum dolor</h6>
+
+Styleguide 1.0.6
+*/
+h6 {
+    margin: 0.5em 0 0.2em 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/*
+<p>
+
+Fließtext, Bodycopy
+
+Markup:
+<p>Lorem ipsum dolor sit amet, consectetuer adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+Styleguide 1.0.7
+*/
+p {
+    /*margin-bottom: 1.3em;*/
+}
+
+p + p {
+   /* margin-top: -1.15em; */
+}
+
+a,
+a:link,
+a:visited {
+    color: #000;
+}
+
+a:hover,
+a:focus {
+
+}
+
+a:active {
+
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+/*
+<ul>, <ol>, <dl>
+
+Aufzählungen, sortiert und unsortiert
+
+Markup:
+<ul>
+    <li>Listenpunkt 1</li>
+    <li>Listenpunkt 2</li>
+    <li>Listenpunkt 3</li>
+</ul>i
+
+Styleguide 1.0.8
+*/
+ul,
+ol,
+dl {
+    margin-bottom: 1.3em;
+    padding: 0 0 0 1.25em;
+}
+
+li,
+dt,
+dd {
+    margin-bottom: 0.5em;
+}
+
+li > ul,
+li > ol,
+li > dl,
+dd > ul,
+dd > ol,
+dd > dl {
+    margin-bottom: 0.5em;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="url"],
+input[type="email"],
+input[type="tel"] {
+    margin: 0.6em 0 0.3em 0;
+    padding: 0.25em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 0.6em;
+}
+
+input[type="submit"],
+input[type="reset"],
+button[type="button"],
+button[type="submit"],
+button[type="reset"] {
+    padding: 0.25em 0.6em;
+}
+
+/*
+introduction
+
+Spezielle Textauszeichnungsklasse für Einleitungstexte
+
+Markup:
+<p class="introduction">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+</p>
+
+Styleguide 1.0.9
+*/
+.introduction {
+    margin: 0.2em 0 0.8em 0;
+
+    font-size: 26px;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #aaaaaa;
+}
+
+/*
+caption
+
+Textauszeichnungsklasse für Bildunterschriften
+
+Markup:
+<img class="..." src="images/turbulent.jpg">
+<p class="caption">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</p>
+
+Styleguide 1.0.10
+*/
+.caption {
+    margin: 0.4em 0 2.3em 0;
+
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+
+/*
+citation
+
+Textauszeichnungsklasse für Zitate
+
+Markup:
+<p class="citation">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+</p>
+
+Styleguide 1.0.11
+*/
+.citation {
+    font-style: italic;
+    line-height: 1.8;
+}
+
+
+
+._category {
+    margin: 0.2em 0 0.1em 0;
+
+    font-size: 15px;
+    font-size: 1.5rem;
+    color: #535353;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+.date {
+    margin: 0.4em 0 0.6em 0;
+
+    font-size: 20px;
+    font-size: 2.0rem;
+    color: #535353;
+    letter-spacing:0.03rem;
+}
+
+
+._small-teaser-txt {
+    margin: 0 0 0.3em 0;
+
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #535353;
+}
+
+
+.txt-more {
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 2;
+    color: #535353;
+    vertical-align: middle;
+}
+
+
+hr {
+    margin: 10px 0 25px 0;
+
+    height:1px;
+    color:#7f7f7f;
+    background-color:#7f7f7f;
+    width:100%;
+}
+
+.hr-after-intro {
+    margin: 10px 0 45px 0;
+}

@@ -1,0 +1,327 @@
+/*
+Global verfügbares Grid-Modul.
+
+Styleguide 2.0
+*/
+
+/*
+grid-item
+
+The grid-item class defines a box inside a grid. Because a grid-item may span
+    multiple columns inside of a row, one may define the widths of each box
+    independently from another box by one of the modifiers below. You can have
+    one to four items in a single row
+
+.m-spans-100    - makes the box 100% wide so it takes all of the available space
+.m-spans-80     - makes the box 80% wide so it takes 4/5ths of available space
+.m-spans-75     - makes the box 75% wide so it takes 3/4ths of available space
+.m-spans-66     - makes the box 66% wide so it takes 2/3rds of available space
+.m-spans-60     - makes the box 60% wide so it takes 3/5ths of available space
+.m-spans-50     - makes the box 50% wide so it takes 2/4ths of available space
+.m-spans-40     - makes the box 40% wide so it takes 2/5ths of available space
+.m-spans-33     - makes the box 33% wide so it takes 1/3rd of available space
+.m-spans-25     - makes the box 25% wide so it takes 1/4th of available space (default)
+.m-spans-20     - makes the box 20% wide so it takes 1/5th of available space
+
+Markup:
+<div class="grid">
+    <div class="grid-item {{modifier}}">
+        ...
+    </div>
+    ...
+</div>
+
+Styleguide 2.0.2
+
+*/
+.grid {
+    /*
+    margin: 0 -1.6666666667%;
+    */
+    margin: 0 -1rem;
+}
+.grid-item {
+    display: inline-block; /* inline-block element to align multiple of them side by side */
+    vertical-align: top; /* make stick to the top of the grid-row; */
+    width: 24.999%; /* by default, grid-items are 1/4 of all available space */
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.grid-item.m-spans-100 {
+    width: 100%;
+}
+
+.grid-item.m-spans-80 {
+    width: 79.999%;
+}
+
+.grid-item.m-spans-75 {
+    width: 74.999%;
+}
+
+.grid-item.m-spans-66 {
+    width: 66.6666665%;
+}
+
+.grid-item.m-spans-60 {
+    width: 59.999%;
+}
+
+.grid-item.m-spans-50 {
+    width: 49.999%;
+}
+
+.grid-item.m-spans-40 {
+    width: 39.999%;
+}
+
+.grid-item.m-spans-33 {
+    width: 33.3333332%;
+}
+
+.grid-item.m-spans-25 {
+    width: 24.999%;
+}
+
+.grid-item.m-spans-20 {
+    width: 19.999%;
+}
+
+.grid-item.m-spans-16 {
+    width: 16.6666667%;
+}
+
+.grid-item.m-spans-10 {
+    width: 9.999%;
+}
+/*
+Modifiers for grid-items:;
+Padding depending on the position of the grid-item.
+Grid items named on their position in 4 column-mode
+m-left-outer | m-left-inner| m-right-inner | m-right-outer
+
+padding applied to : 
+left   : never,
+right  : all blocks with a right sibling;
+top    : never;
+bottom : allways;
+*/
+.m-left-outer {
+    padding-right:  0.5rem;
+    padding-bottom: 0.5rem;
+}
+.m-left-inner {
+    padding-right:  0.5rem;
+    padding-bottom: 0.5rem;    
+}
+.m-right-inner {
+    padding-right:  0.5rem;
+    padding-bottom: 0.5rem;
+}
+.m-right-outer {
+    padding-right:    0rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Umbruch 4 -> 2-spaltig */
+@media screen and (max-width: 900px) {
+    .m-left-outer {
+        padding-right:  0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .m-left-inner {
+        padding-right:    0rem;
+        padding-bottom: 0.5rem;    
+    }
+    .m-right-inner {
+        padding-right:  0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .m-right-outer {
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Umbruch 2 -> 1-spaltig */
+@media screen and (max-width: 600px) {
+    .m-left-outer {
+        padding-right:    0rem;
+        padding-bottom: 0.5rem;
+    }
+    .m-left-inner {
+        padding-right:    0rem;
+        padding-bottom: 0.5rem;    
+    }
+    .m-right-inner {
+        padding-right:    0rem;
+        padding-bottom: 0.5rem;
+    }
+    .m-right-outer {
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* dto. mit Border */
+
+.m-bordered-left-outer {
+    width: calc(100% - 10px);
+    border-right-width:  10px;
+    border-bottom-width: 10px;
+}
+.m-bordered-left-inner {
+    width: calc(100% - 10px);
+    border-right-width:  10px;
+    border-bottom-width: 10px;    
+}
+.m-bordered-right-inner {
+    width: calc(100% - 10px);
+    border-right-width:  10px;
+    border-bottom-width: 10px;
+}
+.m-bordered-right-outer {
+    width: 100%;
+    border-right-width:  0px;
+    border-bottom-width: 10px;
+}
+/* Umbruch 4 -> 2-spaltig */
+@media screen and (max-width: 900px) {
+    .m-bordered-left-outer {
+        width: calc(100% - 10px);
+        border-right-width:  10px;
+        border-bottom-width: 10px;
+    }
+    .m-bordered-left-inner {
+        width: 100%;
+        border-right-width:  0px;
+        border-bottom-width: 10px;    
+    }
+    .m-bordered-right-inner {
+        width: calc(100% - 10px);
+        border-right-width:  10px;
+        border-bottom-width: 10px;
+    }
+    .m-bordered-right-outer {
+        width: 100%;
+        border-right-width:  0px;
+        border-bottom-width: 10px;
+    }
+}
+
+/* Umbruch 2 -> 1-spaltig */
+@media screen and (max-width: 600px) {
+    .m-bordered-left-outer {
+        width: 100%;
+        border-right-width:  0px;
+        border-bottom-width: 10px;
+    }
+    .m-bordered-left-inner {
+        width: 100%;
+        border-right-width:  0px;
+        border-bottom-width: 10px;    
+    }
+    .m-bordered-right-inner {
+        width: 100%;
+        border-right-width:  0px;
+        border-bottom-width: 10px;
+    }
+    .m-bordered-right-outer {
+        width: 100%;
+        border-right-width:  0px;
+        border-bottom-width: 10px;
+    }
+}
+
+/*
+grid
+
+Seed Class for a complete grid-system which allows to independently defines
+    widths and breakpoints for inner boxes and can handle up to four columns
+    in a single row
+
+.m-breaks-600   - Breaks all inner boxes at max screen width of 600px (most Smartphones)
+.m-breaks-700   - Breaks all inner boxes at max screen width of 700px
+.m-breaks-800   - Breaks all inner boxes at max screen width of 800px (most Tablets in portrait)
+.m-breaks-900   - Breaks all inner boxes at max screen width of 900px
+.m-breaks-1024  - Breaks all inner boxes at max screen width of 1024px (iPad landscape size)
+.m-breaks-1100  - Breaks all inner boxes at max screen width of 1100px
+.m-breaks-1200  - Breaks all inner boxes at max screen width of 1200px
+
+Markup:
+<div class="grid {{modifier}}">
+    <div class="grid-item">
+        ...
+    </div>
+    <div class="grid-item">
+        ...
+    </div>
+    <div class="grid-item">
+        ...
+    </div>
+    <div class="grid-item">
+        ...
+    </div>
+</div>
+
+Styleguide 2.0.1
+
+*/
+.grid {
+    display: block;
+    margin: 0 -1em 1.2em -1em; /* "hides" side-gaps of first/last childboxes */
+
+    font-size: 0; /* removes unwanted gaps between boxes caused by inline-handling of childnodes */
+}
+
+/* 
+.grid div { font-size: 1rem; }
+*/
+
+@media screen and (max-width: 600px) {
+    .grid.m-breaks-600 > .grid-item {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid.m-breaks-700 > .grid-item {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid.m-breaks-800 > .grid-item {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid.m-breaks-900 > .grid-item {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid.m-breaks-1024 > .grid-item {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grid.m-breaks-1100 > .grid-item {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .grid.m-breaks-1200 > .grid-item {
+        display: block;
+        width: 100%;
+    }
+}
