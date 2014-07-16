@@ -1,10 +1,10 @@
-</*
+/*
 *
 *   main.css
 *
 */
 
-ul, ol, li,
+ul, ol, dl, li, 
 nav, section, aside, article,
 header, footer, main,
 figure, figcaption {
@@ -31,11 +31,16 @@ figure, figcaption {
 *   WIREFRAME
 ********************/
 body {
+	width: 100%;
+	height: auto;
 	background-image: url('../images/Kriwan_visual_grau_Hintergrund.jpg');
-	background-position: center top;
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
 body.startpage {
+	width: 100%;
+	height: auto;
+	background-size: auto;
 	background-image: url('../images/bg_grau.jpg');
 	background-repeat: repeat-x;
 }
@@ -43,17 +48,28 @@ body.startpage {
 	width: 100%;
 	padding-top: 30px;
 	margin: 0px auto;
-	max-width: 1200px;
-}
-.print-space {
-	width: 100%;
-	margin: 0px auto;
+	max-width: 1230px;
 }
 
+
 .header-area {
+	position: relative;
 	padding: 1rem 0 1rem 5rem;
 	background-color: #fff;
 	margin-bottom: 30px;
+}
+.header-area a.oc-trigger {
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+}
+@media only screen and (max-width: 40em) { 
+	.header-area {
+		padding: 1rem 0 1rem 1rem;
+	}
+	.header-area img {
+		max-width: 85%;
+	}
 }
 
 .spacer-5   { height:  0.5rem; }
@@ -72,6 +88,17 @@ body.startpage {
 .clear { clear: both; height: 0; }
 img.width-100 { width: 100%; }
 .centered { text-align: center; }
+
+/********************
+*   FOUNDATION ANPASSUNG
+********************/
+.row {
+	max-width: 100%;
+}
+.right-off-canvas-menu {
+	background-color: transparent;
+}
+
 /********************
 *   DEBUG
 ********************/

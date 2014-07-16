@@ -6,27 +6,58 @@
    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<meta charset="UTF-8" />
 		<link type="text/css" rel="stylesheet" href="css/reset.css">
-		<link type="text/css" rel="stylesheet" href="css/basefont.css">
 		<link type="text/css" rel="stylesheet" href="css/foundation/foundation.css">
+		<link type="text/css" rel="stylesheet" href="css/basefont.css">
 		<link type="text/css" rel="stylesheet" href="css/typography.krw.css">
 		<link type="text/css" rel="stylesheet" href="css/main.css">
 	</head>
 
 	<body class="startpage">
 		<div class="page" >
-			<div class="header-area">
-				<img src="images/logo.jpg" alt="" />	
-			</div>
 
-			<!-- variabler content -->
-			<div class="header-pic">
-				<img src="images/login_screen_keyvisual_1200x511.jpg" alt="" class="width-100"/>	
-			</div> <!-- header-pic -->
-
-			<div class="spacer-30"></div>
 			<div class="row">
-		  		<div class="small-4 columns">&nbsp;</div>
-		  		<div class="small-4 columns">
+    			<div class="large-12 columns">
+					<div class="header-area">
+						<img src="images/logo.jpg" alt="" />	
+						<a class="right-off-canvas-toggle show-for-small-only oc-trigger" href="#" ><span class="h1">X</span></a>
+					</div>
+				</div>	<!-- .columns -->
+			</div> <!-- .row -->
+			<!-- variabler content -->
+			<div class="row">
+    			<div class="large-12 columns">
+					<div class="header-pic">
+						<img src="images/login_screen_keyvisual_1200x511.jpg" alt="" class="width-100"/>	
+
+					</div> <!-- header-pic -->
+				</div>	<!-- .columns -->
+			</div> <!-- .row -->					
+			<!-- OC - Trigger -->
+			<div class="spacer-30"></div>
+			
+
+					<div class="off-canvas-wrap" data-offcanvas>
+					  <div class="inner-wrap">
+
+
+
+					    <!-- Off Canvas Menu -->
+					    <aside class="right-off-canvas-menu">
+					        <!-- whatever you want goes here -->
+					        <ul>
+					          <li><a href="#"><span class="nav-level-1">Item 1</span></a></li>
+					          <li><a href="#"><span class="nav-level-1">Item 2</span></a></li>
+					          <li><a href="#"><span class="nav-level-1">Item 3</span></a></li>
+					          <li><a href="#"><span class="nav-level-1">Item 4</span></a></li>
+					          <li><a href="#"><span class="nav-level-1">Item 5</span></a></li>
+					          <li><a href="#"><span class="nav-level-1">Item 6</span></a></li>
+
+					        </ul>
+					    </aside>
+
+			<div class="row">
+		  		<div class="small-1 medium-2 large-2 columns">&nbsp;</div>
+		  		<div class="small-10 medium-8 large-8 columns">
 		  			<form action="#" method="post" >
 		  				<p class="h3 centered">Einloggen</p>
 		  				<p>
@@ -41,11 +72,14 @@
 		  				</p>
 		  			</form>
 				</div>
-		  		<div class="small-4 columns">&nbsp;</div>
+		  		<div class="small-1 medium-2 large-2 columns">&nbsp;</div>
 			</div> <!-- row -->
 			
-			<div class="print-space">
-			</div> <!-- .print-space -->
+					  <!-- close the off-canvas menu -->
+					  <a class="exit-off-canvas"></a>
+
+				  </div> <!-- .inner-wrap -->
+				</div> <!-- off-canvas-wrap -->
 
 
 			<!-- ENDE variabler content -->
